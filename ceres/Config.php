@@ -5,7 +5,7 @@
 # (c) 2020 Simon Strudwick
 # 
 
-define('ENABLE_DEVELOPMENT_MODE', true); // Set to false in production environment. Set to true to view PHP warnings and errors
+define('ENABLE_DEVELOPMENT_MODE', false); // Set to false in production environment. Set to true to view PHP warnings and errors
 
 define('SITE_TITLE', 'Ceres Example');
 define('SITE_URL', 'https://ceres-example.strudwick.org/'); // Must end with a forward-slash /
