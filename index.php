@@ -39,18 +39,16 @@
         </div>
         
         <div id="content">
-            <div id="content">
-                <div class="articleHeader">
-                    <?php echo $page->headerHTML(); ?>
-                </div>        
-                
-                <div class="articleContent">
-                    <?php echo $page->html(); ?>
-                </div>
-                
-                <div class="articleFooter">
-                    <?php echo $page->footerHTML(); ?>
-                </div>
+            <div class="articleHeader">
+                <?php echo $page->headerHTML(); ?>
+            </div>        
+            
+            <div class="articleContent">
+                <?php echo $page->html(); ?>
+            </div>
+            
+            <div class="articleFooter">
+                <?php echo $page->footerHTML(); ?>
             </div>
         </div>
         
