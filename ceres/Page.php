@@ -135,9 +135,14 @@ class Page {
 		}
 		
 		$newContent = '';
+		$isEscaped = false;
 		
 		foreach (explode(PHP_EOL, $this->pageContent) as $line) {
-			if (hasPrefix('@@', $line)) {
+			if ($line === '```') {
+				$isEscaped = !$isEscaped;
+			}
+			
+			if (!$isEscaped && hasPrefix('@@', $line)) {
 				$params = explode('=', str_replace('@@', '', $line));
 				if (count($params) > 1) {
 					$key = strtolower(trim($params[0]));
