@@ -1,2 +1,6 @@
 .DS_Store
 /ceres/Parsedown.php
+/pages/archive.markdown
+/pages/home.markdown
+/pages/site_map.markdown
+/rss.xml
