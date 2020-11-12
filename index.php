@@ -12,7 +12,7 @@
 
     $page = new Page($entryName, $pageName);
     if (!$page->hasContent()) {
-        $page = new Page("home", "page");
+        $page = new Page(HOME_PAGE_NAME, "page");
     }
     
     // $showPageTitle = !in_array($page->pageName, HIDE_TITLE_ON_PAGES);
