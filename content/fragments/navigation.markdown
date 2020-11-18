@@ -1,4 +1,4 @@
 - [Home](/page/home)
 - [Page1](/page/page1)
 - [Page2](/page/page2)
-- [Page3](/page/page3)
+- [Contact](/page/contact)
