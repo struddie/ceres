@@ -29,6 +29,10 @@ define('HOME_POST_DATE_POSITON', 2); // 0 don't show, 1 show above title, 2 show
 define('READ_MORE_LINK', 'Read More');
 define('ARCHIVE_LINK', 'Archive');
 
+// Contact Email
+define('SEND_TO', 'email@example.org');
+define('SEND_AUTOREPLY', false);
+
 // RSS feed values
 define('RSS_TITLE', 'Ceres');
 define('RSS_DESCRIPTION', 'Example site');

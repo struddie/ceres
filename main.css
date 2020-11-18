@@ -4,7 +4,7 @@
   --alt-text-color: #999;
   --nav-link-color: #FFFFFF;
   --link-text-color: #941100;
-  --link-text-color: #941100;
+  --link-contrast-color: #FFFFFF;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -12,7 +12,7 @@
     --main-text-color: #FFFFFF;
     --alt-text-color: #BBBBBB;
     --link-text-color: #FF7E79;
-    --link-text-color: #FF7E79;
+    --link-contrast-color: #FFFFFF;
   }
 }
 
@@ -170,4 +170,95 @@ hr {
 }
 #footer a:active {
   color: var(--link-text-color);
+}
+
+/* Form */
+
+#content label {
+  font-size: 14pt;
+  text-align: right;
+  width: 200px;
+  float: left;
+  margin: 5px;
+  margin-top: 8px;
+  color: #000;
+}
+
+@media (max-width: 910px) {
+#content label {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+#content input {
+    font-size: 14pt;
+    float: left;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 580px;
+}
+
+@media (max-width: 910px) {
+    #content input {
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+#content input:focus { 
+    outline: none;
+    border-color: #CCC;
+    box-shadow: 0 0 5px var(--link-text-color);
+}
+
+#content textarea {
+    font-size: 14pt;
+    width: 800px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#content textarea:focus{
+    outline: none;
+    border-color: #CCC;
+    box-shadow: 0 0 5px var(--link-text-color);
+}
+
+@media (max-width: 910px) {
+#content textarea {
+        width: 100%;
+    }
+}
+
+#submit-button {
+    color: var(--link-contrast-color);
+    background-color: var(--link-text-color);
+    font-size: 0;
+    width: 90%;
+    height: 60px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    -webkit-appearance: none;
+}
+
+#content fieldset {
+  border-width: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#content fieldset p {
+  clear: both;
 }

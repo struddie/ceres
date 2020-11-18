@@ -13,6 +13,7 @@ if (ENABLE_DEVELOPMENT_MODE) {
 }
 
 include 'Page.php';	
+include 'ContactPage.php';
 include 'utilities.php';
 include 'Parsedown.php';
 

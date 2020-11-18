@@ -9,13 +9,16 @@
     
     $pageName = getParameter('page') ?: 'page';    
     $entryName = getParameter('entry') ?: 'home';
-
-    $page = new Page($entryName, $pageName);
+    
+    if ($pageName === 'page' && $entryName === CONTACT_PAGE_NAME) {
+        $page = new ContactPage(SEND_TO, SEND_AUTOREPLY);
+    } else {
+        $page = new Page($entryName, $pageName);
+    }
+    
     if (!$page->hasContent()) {
         $page = new Page(HOME_PAGE_NAME, "page");
     }
-    
-    // $showPageTitle = !in_array($page->pageName, HIDE_TITLE_ON_PAGES);
     
     $headerContent = new Page("header", "fragment");
     $navigationContent = new Page("navigation", "fragment");
