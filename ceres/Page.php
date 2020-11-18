@@ -34,7 +34,7 @@ class Page {
 			$fileName = $pageName;
 		}
 		
-		$pageFilePath = $_SERVER['DOCUMENT_ROOT']."/{$this->markdownDirectory}/{$fileName}";
+		$pageFilePath = $_SERVER['DOCUMENT_ROOT']."/content/{$this->markdownDirectory}/{$fileName}";
 		$this->pageContent = file_get_contents($pageFilePath);
 		
 		if ($type !== 'fragment') {
